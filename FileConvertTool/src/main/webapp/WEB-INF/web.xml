@@ -1,0 +1,23 @@
+<web-app>
+  <display-name>Archetype Created Web Application</display-name>
+  
+  <welcome-file-list>
+	<welcome-file>/FileConvertWebsite/Webpages/index.jsp</welcome-file>
+  </welcome-file-list>
+	
+	<error-page>  
+  		<exception-type>java.lang.Exception</exception-type>  
+ 		<location>/FileConvertWebsite/Webpages/Error500.jsp</location>  
+  	</error-page>
+	
+	<context-param>			<!--  Change path when you deployed in cloud  -->
+		<param-name>UploadPath</param-name>
+		<param-value>C:\Users\ASUS\company-workspace\FileConverter.zip_expanded\FileConvertTool\src\main\webapp\FileConvertWebsite\FileStore\UploadedFile</param-value>
+	</context-param>
+
+	<context-param>			<!--  Change path when you deployed in cloud  -->
+		<param-name>convertedPath</param-name>
+		<param-value>C:\Users\ASUS\company-workspace\FileConverter.zip_expanded\FileConvertTool\src\main\webapp\FileConvertWebsite\FileStore\ConvertedFile</param-value>
+	</context-param>
+	
+</web-app>
